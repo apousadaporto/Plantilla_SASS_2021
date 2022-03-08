@@ -2,3 +2,93 @@
 /* @FOOTER */
 /* ********* */
 
+.links{
+    background-color: $color_footer_scLinks;
+}
+
+.logoIdiomas{
+    background-color: $color_footer_scLogo;
+}
+
+.terminosSocial{
+    background-color: $color_footer_scTerminos;
+}
+
+// Margenes
+.links{
+    &__contenido{
+        padding: 1rem;
+    }
+}
+
+.logoIdiomas{
+    &__contenido{
+        padding: 1rem;
+    }
+}
+
+.terminosSocial{
+    &__contenido{
+        padding: 1rem;
+    }
+}
+
+.centrar{
+    max-width: $anchoMax;
+    margin: 0 auto;
+}
+
+// Términos y Condiciones
+.terminosSocial__contenido{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+// Políticas
+.politicas{
+    column-count: 3;
+    column-rule: 2px solid #7075a2;
+
+    // Convierte todo en bloques
+    > *{
+        display: block;
+    }
+}
+
+// Redes Sociales
+.redesSocial{
+
+}
+
+.logoIdiomas__copyright{
+    margin: 0;
+    display: flex;
+}
+
+.logoIdiomas__img{
+    width: 80px;
+    height: 80px;
+}
+
+.logoIdiomas__direccion{
+    padding-left: 20px;
+}
+
+.logoIdiomas__contenido{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: #7075a2;
+    svg{
+        width: 32px;
+        height: 32px;
+        fill: #7075a2;
+    }
+}
+
+
