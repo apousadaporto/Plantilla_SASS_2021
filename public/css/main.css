@@ -347,6 +347,14 @@ template {
 /* ********* */
 /* @RESET */
 /* ********* */
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 /* ********* */
 /* @VARIABLES */
 /* ********* */
@@ -356,6 +364,14 @@ template {
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+html {
+  font-family: "Calibri";
+}
+
+.logoIdiomas__select {
+  font-weight: bold;
+}
+
 /* ********* */
 /* @BUTTONS */
 /* ********* */
@@ -387,8 +403,39 @@ template {
   padding: 1rem;
 }
 
+.links__contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.links__contenido--lista {
+  line-height: 40px;
+}
+
+.links__mapaSitio {
+  border: none;
+  color: #7075a2;
+}
+
+.titulo {
+  color: #394083;
+}
+
 .logoIdiomas__contenido {
   padding: 1rem;
+}
+.logoIdiomas__select {
+  width: 9.375rem;
+  padding-left: 9.375rem;
+  padding: 5px 0 5px 3px;
+  border: 1px solid #C9CEEA;
+  color: #7075a2;
+}
+.logoIdiomas__direccion {
+  color: #7075a2;
 }
 
 .terminosSocial__contenido {
@@ -419,6 +466,9 @@ template {
   -webkit-column-rule: 2px solid #7075a2;
      -moz-column-rule: 2px solid #7075a2;
           column-rule: 2px solid #7075a2;
+}
+.politicas__privacidad {
+  text-align: center;
 }
 .politicas > * {
   display: block;

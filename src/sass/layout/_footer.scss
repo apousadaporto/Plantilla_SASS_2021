@@ -2,6 +2,7 @@
 /* @FOOTER */
 /* ********* */
 
+// Colores
 .links{
     background-color: $color_footer_scLinks;
 }
@@ -14,16 +15,43 @@
     background-color: $color_footer_scTerminos;
 }
 
-// Margenes
 .links{
     &__contenido{
         padding: 1rem;
     }
 }
 
+.links__contenido{
+    display: flex;
+    justify-content: space-between;
+    &--lista{
+        line-height: $interlineadoLinks;
+    }
+}
+
+.links__mapaSitio{
+    border: none;
+    color: $color_footer_texto;
+}
+
+.titulo{
+   
+    color: $color_footer_titulo;
+}
+
 .logoIdiomas{
     &__contenido{
         padding: 1rem;
+    }
+    &__select{
+        width: 9.375rem;
+        padding-left: 9.375rem;
+        padding: 5px 0 5px 3px;
+        border: 1px solid $color_footer_scTerminos;
+        color: $color_footer_texto;
+    }
+    &__direccion{
+        color: $color_footer_texto;
     }
 }
 
@@ -48,7 +76,11 @@
 // Políticas
 .politicas{
     column-count: 3;
-    column-rule: 2px solid #7075a2;
+    column-rule: 2px solid $color_footer_texto;
+
+    &__privacidad{
+        text-align: center;
+    }
 
     // Convierte todo en bloques
     > *{
@@ -83,11 +115,11 @@
 
 a {
     text-decoration: none;
-    color: #7075a2;
+    color: $color_footer_texto;
     svg{
         width: 32px;
         height: 32px;
-        fill: #7075a2;
+        fill: $color_footer_texto;
     }
 }
 
